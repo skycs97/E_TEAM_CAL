@@ -5,6 +5,9 @@ using namespace testing;
 class Cal {
 public:
 	//Code space
+	int getMultiplyAccumulate(int a, int b, int c) {
+		return (a * b) + c;
+  }
 	int getSum(int a, int b)
 	{
 		return a + b;
@@ -21,6 +24,15 @@ public:
 };
 
 //Test Case
+TEST(CAL_TEST, MAC_TC_1) {
+	int a = 3;
+	int b = 5;
+	int c = 2;
+
+	Cal cal;
+
+	EXPECT_EQ(17, cal.getMultiplyAccumulate(a, b, c));
+}
 TEST(Caltest, getSumTest) {
 	Cal cal;
 	EXPECT_EQ(0, cal.getSum(0, 0));
