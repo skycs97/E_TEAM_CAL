@@ -5,6 +5,10 @@ using namespace testing;
 class Cal {
 public:
 	//Code space
+	int getGop(int a, int b)
+	{
+		return a * b;
+  }
 	int getMultiplyAccumulate(int a, int b, int c) {
 		return (a * b) + c;
   }
@@ -24,6 +28,12 @@ public:
 };
 
 //Test Case
+TEST(TS, TC_Gop)
+{
+	Cal cal;
+	EXPECT_EQ(10, cal.getGop(2, 5));
+}
+  
 TEST(CAL_TEST, MAC_TC_1) {
 	int a = 3;
 	int b = 5;
