@@ -8,7 +8,7 @@ public:
 };
 
 //Test Case
-TEST(KJE, Zegop1)
+TEST(KJE, ZegopTc)
 {
 	Cal cal;
 	int a = 10;
@@ -18,7 +18,7 @@ TEST(KJE, Zegop1)
 	EXPECT_EQ(expected, result);
 }
 
-TEST(KJE, Zegop2)
+TEST(KJE, ZegopMinusTc)
 {
 	Cal cal;
 	int a = -10;
